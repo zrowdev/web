@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="neonGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00ffb3" />
+      <stop offset="100%" stop-color="#00e6ff" />
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="1" result="blur" />
+      <feFlood flood-color="#00ffb3" flood-opacity="0.3" result="glow" />
+      <feComposite in="glow" in2="blur" operator="in" result="glowBlur" />
+      <feComposite in="SourceGraphic" in2="glowBlur" operator="over" />
+    </filter>
+  </defs>
+  
+  <!-- Terminal window background -->
+  <rect x="2" y="2" width="28" height="28" rx="3" fill="#0a0a0a" stroke="url(#neonGradient)" stroke-width="1" filter="url(#glow)" />
+  
+  <!-- Terminal window header -->
+  <rect x="2" y="2" width="28" height="5" rx="3" fill="#131313" stroke="url(#neonGradient)" stroke-width="0.5" />
+  
+  <!-- Terminal window control buttons -->
+  <circle cx="5" cy="4.5" r="1" fill="#ff5f56" />
+  <circle cx="8" cy="4.5" r="1" fill="#ffbd2e" />
+  <circle cx="11" cy="4.5" r="1" fill="#27c93f" />
+  
+  <!-- Command prompt symbol -->
+  <text x="7" y="21" font-family="'Courier New', monospace" font-size="12" font-weight="bold" fill="url(#neonGradient)" filter="url(#glow)">$_</text>
+  
+  <!-- Cursor with animation -->
+  <rect x="19" y="18" width="4" height="2" fill="url(#neonGradient)">
+    <animate attributeName="opacity" values="0;1;1;0" dur="1.5s" repeatCount="indefinite" />
+  </rect>
+</svg> 

@@ -1,3 +1,33 @@
+// Function to open mail client with form data
+function openMailClient(event) {
+    event.preventDefault();
+    
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const projectType = document.getElementById('projectType').value;
+    const message = document.getElementById('message').value;
+    
+    // Create email body with form data
+    const subject = `Project Inquiry: ${projectType} from ${name}`;
+    const body = `Name: ${name}\nEmail: ${email}\nProject Type: ${projectType}\n\n${message}`;
+    
+    // Create mailto link
+    const mailtoLink = `mailto:develop@zrow.dev?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    
+    // Open mail client
+    window.location.href = mailtoLink;
+    
+    // Show success message
+    const form = document.getElementById('contactForm');
+    form.innerHTML = `
+        <div class="success-message">
+            <i class="fas fa-check-circle"></i>
+            <p>Thank you for your message! Your email client should open shortly.</p>
+        </div>`;
+    
+    return false;
+}
+
 document.addEventListener('DOMContentLoaded', function() {
     // Mobile menu toggle
     const menuToggle = document.querySelector('.menu-toggle');
@@ -46,7 +76,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Simple form submission (example)
     const contactForm = document.querySelector('.contact-form form');
     
-    if (contactForm) {
+    if (contactForm && !contactForm.hasAttribute('onsubmit')) {
         contactForm.addEventListener('submit', function(e) {
             e.preventDefault();
             

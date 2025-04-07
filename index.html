@@ -3,184 +3,217 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CryptoDev Solutions</title>
+    <title>zrow.dev - Blockchain Development & Grant Solutions</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="description" content="zrow.dev - Specialized blockchain development studio delivering grant-funded projects and custom outsourcing solutions for Web3 ventures.">
+    <meta name="keywords" content="blockchain development, web3, grants, outsourcing, crypto, defi, smart contracts, NFT, developer team">
+    <meta name="author" content="zrow.dev">
+    <meta property="og:title" content="zrow.dev - Blockchain Development & Grant Solutions">
+    <meta property="og:description" content="Specialized blockchain development studio delivering grant-funded projects and custom outsourcing solutions for Web3 ventures.">
+    <meta property="og:type" content="website">
 </head>
 <body>
     <header>
-        <nav>
-            <div class="logo">CryptoDev</div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="menu-toggle">
-                <i class="fas fa-bars"></i>
+        <nav aria-label="Main Navigation">
+            <div class="logo" aria-label="zrow.dev Logo">
+                <span class="logo-text">zrow.dev</span>
             </div>
+            <ul class="nav-links" role="menu">
+                <li><a href="#home" role="menuitem" aria-current="page">Home</a></li>
+                <li><a href="#about" role="menuitem">About</a></li>
+                <li><a href="#services" role="menuitem">Services</a></li>
+                <li><a href="#projects" role="menuitem">Projects</a></li>
+                <li><a href="#contact" role="menuitem">Contact</a></li>
+            </ul>
+            <button class="menu-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </button>
         </nav>
     </header>
 
-    <section id="home" class="hero">
-        <div class="container">
-            <h1>Building the Future of <span class="highlight">Crypto</span></h1>
-            <p>Innovative software solutions for blockchain and cryptocurrency projects</p>
-            <div class="cta-buttons">
-                <a href="#contact" class="btn primary">Get Started</a>
-                <a href="#services" class="btn secondary">Our Services</a>
+    <main>
+        <section id="home" class="hero" aria-labelledby="hero-heading">
+            <div class="container">
+                <h1 id="hero-heading">Outsourced <span class="highlight">Blockchain</span> Development</h1>
+                <p class="hero-subtitle">Specialized team delivering grant-funded projects and custom solutions for Web3 ventures</p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn primary" aria-label="Get Started">Start Your Project</a>
+                    <a href="#services" class="btn secondary" aria-label="Learn About Our Services">Explore Services</a>
+                </div>
             </div>
-        </div>
-        <div class="hero-graphic">
-            <div class="crypto-icon btc"></div>
-            <div class="crypto-icon eth"></div>
-            <div class="lines"></div>
-        </div>
-    </section>
+        </section>
 
-    <section id="about" class="about">
-        <div class="container">
-            <h2>About Us</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>We are a team of specialized developers building cutting-edge software for the crypto ecosystem. With deep expertise in blockchain technologies, we create secure, scalable solutions for businesses entering the decentralized future.</p>
-                    <p>Founded in 2018, we've successfully delivered over 50 projects ranging from DeFi platforms to NFT marketplaces.</p>
-                </div>
-                <div class="stats">
-                    <div class="stat-item">
-                        <span class="stat-number">50+</span>
-                        <span class="stat-label">Projects</span>
+        <section id="about" class="about" aria-labelledby="about-heading">
+            <div class="container">
+                <h2 id="about-heading">Who We Are</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>zrow.dev is a specialized blockchain development team that helps companies build cutting-edge Web3 projects. We excel in securing and delivering grant-funded initiatives while offering flexible outsourcing solutions for blockchain ventures.</p>
+                        <p>Our team combines technical expertise with strategic insights to transform complex blockchain concepts into production-ready applications. We've successfully secured and implemented numerous grants across major blockchain ecosystems.</p>
                     </div>
-                    <div class="stat-item">
-                        <span class="stat-number">20+</span>
-                        <span class="stat-label">Clients</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number">5+</span>
-                        <span class="stat-label">Years</span>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="50">0</span>
+                            <span class="stat-label">Projects</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="25">0</span>
+                            <span class="stat-label">Grants</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="5">0</span>
+                            <span class="stat-label">Years</span>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="services" class="services">
-        <div class="container">
-            <h2>Our Services</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-code"></i></div>
-                    <h3>Smart Contract Development</h3>
-                    <p>Secure, audited smart contracts for DeFi, NFTs, and custom blockchain solutions.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
-                    <h3>Web3 Applications</h3>
-                    <p>User-friendly dApps with seamless blockchain integration and modern UI/UX.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-shield-alt"></i></div>
-                    <h3>Security Audits</h3>
-                    <p>Comprehensive security analysis to identify vulnerabilities in your blockchain projects.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-exchange-alt"></i></div>
-                    <h3>Exchange Integration</h3>
-                    <p>Custom API solutions to connect with major cryptocurrency exchanges and liquidity providers.</p>
+        <section id="services" class="services" aria-labelledby="services-heading">
+            <div class="container">
+                <h2 id="services-heading">Our Services</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-file-contract"></i></div>
+                        <h3>Grant Development</h3>
+                        <p>Full-cycle grant application, proposal writing, and project execution for blockchain ecosystems.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-code"></i></div>
+                        <h3>Smart Contract Development</h3>
+                        <p>Secure, audited smart contracts for DeFi, NFTs, DAOs, and custom blockchain solutions.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-users"></i></div>
+                        <h3>Team Outsourcing</h3>
+                        <p>Dedicated blockchain developers integrated with your team for long-term project success.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-rocket"></i></div>
+                        <h3>Project Acceleration</h3>
+                        <p>Rapid development and scaling for existing Web3 projects with tight deadlines.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2>Recent Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image" style="background-color: #8247E5"></div>
-                    <div class="project-info">
-                        <h3>DeFi Lending Platform</h3>
-                        <p>A decentralized lending protocol with multi-chain support and automated interest rate optimization.</p>
-                        <div class="project-tags">
-                            <span>Solidity</span>
-                            <span>React</span>
-                            <span>DeFi</span>
+        <section id="projects" class="projects" aria-labelledby="projects-heading">
+            <div class="container">
+                <h2 id="projects-heading">Recent Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image" style="background-color: #1E1E1E">
+                            <div class="project-overlay">
+                                <span class="project-category">Grant</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Cross-Chain Governance Platform</h3>
+                            <p>Grant-funded project enabling DAO governance actions across multiple blockchain networks.</p>
+                            <div class="project-tags">
+                                <span>Solidity</span>
+                                <span>React</span>
+                                <span>DAO</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image" style="background-color: #2775CA"></div>
-                    <div class="project-info">
-                        <h3>NFT Marketplace</h3>
-                        <p>Custom NFT marketplace with creator royalties, auctions, and cross-chain functionality.</p>
-                        <div class="project-tags">
-                            <span>ERC-721</span>
-                            <span>Vue.js</span>
-                            <span>NFT</span>
+                    <div class="project-card">
+                        <div class="project-image" style="background-color: #212121">
+                            <div class="project-overlay">
+                                <span class="project-category">Outsourcing</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>DeFi Analytics Dashboard</h3>
+                            <p>Custom analytics platform for institutional investors tracking yield opportunities across DeFi.</p>
+                            <div class="project-tags">
+                                <span>The Graph</span>
+                                <span>Vue.js</span>
+                                <span>DeFi</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image" style="background-color: #F7931A"></div>
-                    <div class="project-info">
-                        <h3>Crypto Payment Gateway</h3>
-                        <p>Enterprise-grade payment solution for e-commerce with multiple cryptocurrency support.</p>
-                        <div class="project-tags">
-                            <span>Node.js</span>
-                            <span>API</span>
-                            <span>Payments</span>
+                    <div class="project-card">
+                        <div class="project-image" style="background-color: #1A1A1A">
+                            <div class="project-overlay">
+                                <span class="project-category">Product</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>NFT Marketplace Infrastructure</h3>
+                            <p>White-label NFT marketplace solution with customizable royalty and auction mechanisms.</p>
+                            <div class="project-tags">
+                                <span>ERC-721</span>
+                                <span>TypeScript</span>
+                                <span>NFT</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Get In Touch</h2>
-            <div class="contact-content">
-                <div class="contact-form">
-                    <form>
-                        <div class="form-group">
-                            <input type="text" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea placeholder="Tell us about your project" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn primary">Send Message</button>
-                    </form>
-                </div>
-                <div class="contact-info">
-                    <div class="info-item">
-                        <i class="fas fa-envelope"></i>
-                        <p>contact@cryptodev.com</p>
+        <section id="contact" class="contact" aria-labelledby="contact-heading">
+            <div class="container">
+                <h2 id="contact-heading">Start Working With Us</h2>
+                <div class="contact-content">
+                    <div class="contact-form">
+                        <form id="contactForm" aria-label="Contact Form">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="projectType">Project Type</label>
+                                <select id="projectType" name="projectType" required>
+                                    <option value="" disabled selected>Select project type</option>
+                                    <option value="grant">Grant Application</option>
+                                    <option value="outsourcing">Team Outsourcing</option>
+                                    <option value="development">Custom Development</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Tell us about your project</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn primary">Send Message</button>
+                        </form>
                     </div>
-                    <div class="info-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <p>123 Blockchain Street, Tech City</p>
-                    </div>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-github"></i></a>
-                        <a href="#"><i class="fab fa-telegram"></i></a>
+                    <div class="contact-info">
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <p>contact@zrow.dev</p>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-globe"></i>
+                            <p>Remote-first company</p>
+                        </div>
+                        <div class="social-links">
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="#" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+                            <a href="#" aria-label="Discord"><i class="fab fa-discord"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <footer>
         <div class="container">
             <div class="footer-content">
-                <div class="logo">CryptoDev</div>
-                <p>&copy; 2023 CryptoDev Solutions. All rights reserved.</p>
+                <div class="logo" aria-label="zrow.dev Logo">zrow.dev</div>
+                <p>&copy; 2024 zrow.dev - Blockchain Development Studio. All rights reserved.</p>
             </div>
         </div>
     </footer>

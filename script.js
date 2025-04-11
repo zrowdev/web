@@ -197,7 +197,7 @@ document.addEventListener('DOMContentLoaded', function() {
             this.speedX = Math.random() * 1 - 0.5;
             this.speedY = Math.random() * 1 - 0.5;
             this.opacity = Math.random() * 0.5 + 0.2;
-            this.color = Math.random() > 0.5 ? '#7c3aed' : '#3b82f6';
+            this.color = Math.random() > 0.5 ? '#fbbf24' : '#f59e0b';
         }
 
         update() {
